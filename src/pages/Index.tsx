@@ -110,7 +110,7 @@ const Index = () => {
                 Private Labeling & Export Branding
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We offer complete private labeling solutions — from custom packaging to export-grade branding. Our snacks are already trusted under names like <strong className="text-foreground">Lamis</strong> and <strong className="text-foreground">Laziz</strong> in international markets.
+                We offer complete private labeling solutions, from custom packaging to export-grade branding. Our snacks are already trusted under names like <strong className="text-foreground">Lamis</strong> and <strong className="text-foreground">Laziz</strong> in Dubai markets.
               </p>
               <div className="flex flex-col gap-4">
                 {["Custom Packaging Design", "Export-Ready Compliance", "Private Label Production", "Brand Consultation"].map((step, i) => (
@@ -124,14 +124,56 @@ const Index = () => {
               </div>
             </div>
             <div className="bg-secondary rounded-xl p-10 text-center">
-              <div className="space-y-6">
-                {["Lamis", "Laziz"].map((brand) => (
-                  <div key={brand} className="bg-background rounded-lg p-6 border border-border">
-                    <p className="font-heading text-2xl font-bold text-primary">{brand}</p>
-                    <p className="text-sm text-muted-foreground mt-1">Export Brand</p>
+              <div className="space-y-8">
+                {[
+                  {
+                    name: "Lamis",
+                    images: [
+                      "src/assets/Brands/lamis_1.png",
+                      "src/assets/Brands/lamis_2.png",
+                      "src/assets/Brands/lamis_3.png",
+                    ],
+                  },
+                  {
+                    name: "Laziz",
+                    images: [
+                      "src/assets/Brands/laziz_1.png",
+                      "src/assets/Brands/laziz_2.png",
+                      "src/assets/Brands/laziz_3.png",
+                      "src/assets/Brands/laziz_4.png",
+                      "src/assets/Brands/laziz_5.png",
+                    ],
+                  },
+                ].map((brand) => (
+                  <div
+                    key={brand.name}
+                    className="bg-background rounded-lg p-6 border border-border space-y-4"
+                  >
+                    <p className="font-heading text-2xl font-bold text-primary">
+                      {brand.name}
+                    </p>
+
+                    {/* Horizontal Scroll Container */}
+                    <div className="flex gap-4 overflow-x-auto custom-scrollbar">
+                      {brand.images.map((img, index) => (
+                        <div
+                          key={index}
+                          className="max-w-[150px] flex-shrink-0 w-40 aspect-[4/6] rounded-lg overflow-hidden border border-border"
+                        >
+                          <img
+                            src={img}
+                            alt={`${brand.name} ${index + 1}`}
+                            className=" w-half h-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
-                <p className="text-sm text-muted-foreground">Your brand could be next →</p>
+
+                <p className="text-sm text-muted-foreground">
+                  Your brand could be next →
+                </p>
               </div>
             </div>
           </div>
@@ -143,7 +185,7 @@ const Index = () => {
         <div className="container-narrow max-w-2xl">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Partner with Us?</h2>
           <p className="opacity-90 mb-8">
-            Whether you're a retailer, distributor, or looking for private-label manufacturing — let's talk.
+            Whether you're a retailer, distributor, or looking for private-label manufacturing, let's talk.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

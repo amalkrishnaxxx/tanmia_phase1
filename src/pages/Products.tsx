@@ -51,7 +51,12 @@ const Products = () => {
               <X size={20} />
             </button>
             <div className="aspect-video bg-secondary rounded-lg mb-4 flex items-center justify-center">
-              <span className="font-heading text-xl text-muted-foreground/40">{selected.name}</span>
+              {/* <span className="font-heading text-xl text-muted-foreground/40">{selected.name}</span> */}
+              <img
+                src={selected.image}
+                alt={selected.name}
+                className="w-half h-full object-cover transition-transform duration-300"
+              />
             </div>
             <h2 className="font-heading text-2xl font-bold mb-2">{selected.name}</h2>
             <p className="text-muted-foreground mb-4">{selected.description}</p>
