@@ -6,7 +6,7 @@ export interface Product {
   featured?: boolean;
 }
 
-import palakImg from "@assets/products/Palak murukku.jpg";
+import palakImg from "@/assets/products/Palak murukku.jpg";
 import karasevImg from "@/assets/products/Karasev.jpg";
 import GingerImg from "@/assets/products/Gingelly Candy.jpg";
 import JackImg from "@/assets/products/Jackfruit chips.jpg";
@@ -17,7 +17,7 @@ import RedImg from "@/assets/products/Malabar murukku- Red apsara.jpg";
 import ChillyImg from "@/assets/products/Malabar murukku- Chilly.jpg";
 import RingImg from "@/assets/products/Ring Murukku.jpg";
 import PayyoliImg from "@/assets/products/Payyoli mixture.jpg";
-import TomatoImg from "@/assetgs/products/Tomato murukku.jpg";
+import TomatoImg from "@/assets/products/Tomato murukku.jpg";
 import ButterMurukImg from "@/assets/products/Butter murukku.jpg";
 import BiscutCashImg from "@/assets/products/Biscuit masala- cashew type.jpg";
 import EggbsImg from "@/assets/products/Egg Biscuit.jpg";
