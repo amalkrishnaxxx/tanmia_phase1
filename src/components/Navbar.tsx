@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container-narrow flex items-center justify-between h-16 px-4 md:px-8">
-        <img src="src/assets/Logo.png" className="h-16 w-auto"></img>
+        <img src="Logo.png" className="h-16 w-auto"></img>
         <Link to="/" className="flex items-center gap-2">
           {/*<span className="font-heading text-xl md:text-2xl font-bold text-primary">
             Tanmia<span className="text-gradient-gold"> Foods</span>

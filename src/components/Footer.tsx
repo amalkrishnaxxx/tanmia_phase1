@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="container-narrow section-padding">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
-        <img src="src/assets/Logo.png" className="h-16 w-auto"></img>
+        <img src="/Logo.png" className="h-16 w-auto"></img>
 {/*     <h3 className="text-xl font-heading font-bold mb-4">
             Tanmia<span className="text-gradient-gold"> Foods</span>
           </h3>*/}
