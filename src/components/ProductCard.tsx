@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+import { products, type Product } from "@/data/products";
 import { Eye } from "lucide-react";
 
 interface ProductCardProps {
@@ -10,11 +10,7 @@ const ProductCard = ({ product, onView }: ProductCardProps) => (
   <div className="group bg-card rounded-lg border border-border overflow-hidden card-hover">
     {/* Image placeholder */}
     <div className="relative aspect-square bg-secondary overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <span className="font-heading text-lg text-muted-foreground/40 text-center px-4">
-          {product.name}
-        </span>
-      </div>
+      <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"/>
       {/* Hover overlay */}
       <div className="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
         <button
