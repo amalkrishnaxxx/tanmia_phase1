@@ -3,6 +3,15 @@ import { Shield, Droplets, Leaf, Award, ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import ProductCard from "@/components/ProductCard";
 import { featuredProducts } from "@/data/products";
+import lamis1 from "@/assets/Brands/lamis_1.png";
+import lamis2 from "@/assets/Brands/lamis_2.png";
+import lamis3 from "@/assets/Brands/lamis_3.png";
+
+import laziz1 from "@/assets/Brands/laziz_1.png";
+import laziz2 from "@/assets/Brands/laziz_2.png";
+import laziz3 from "@/assets/Brands/laziz_3.png";
+import laziz4 from "@/assets/Brands/laziz_4.png";
+import laziz5 from "@/assets/Brands/laziz_5.png";
 
 const qualityItems = [
   { icon: Droplets, title: "Premium Edible Oil", desc: "Only high-grade oil used in every batch." },
@@ -128,21 +137,11 @@ const Index = () => {
                 {[
                   {
                     name: "Lamis",
-                    images: [
-                      "@/assets/Brands/lamis_1.png",
-                      "@/assets/Brands/lamis_2.png",
-                      "@/assets/Brands/lamis_3.png",
-                    ],
+                    images: [lamis1, lamis2, lamis3],
                   },
                   {
                     name: "Laziz",
-                    images: [
-                      "src/assets/Brands/laziz_1.png",
-                      "src/assets/Brands/laziz_2.png",
-                      "src/assets/Brands/laziz_3.png",
-                      "src/assets/Brands/laziz_4.png",
-                      "src/assets/Brands/laziz_5.png",
-                    ],
+                    images: [laziz1, laziz2, laziz3, laziz4, laziz5],
                   },
                 ].map((brand) => (
                   <div
