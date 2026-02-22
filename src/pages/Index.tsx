@@ -129,9 +129,9 @@ const Index = () => {
                   {
                     name: "Lamis",
                     images: [
-                      "src/assets/Brands/lamis_1.png",
-                      "src/assets/Brands/lamis_2.png",
-                      "src/assets/Brands/lamis_3.png",
+                      "@/assets/Brands/lamis_1.png",
+                      "@/assets/Brands/lamis_2.png",
+                      "@/assets/Brands/lamis_3.png",
                     ],
                   },
                   {
