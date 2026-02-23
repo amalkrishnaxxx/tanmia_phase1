@@ -30,19 +30,16 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.path
-                  ? "text-primary font-semibold"
-                  : "text-muted-foreground"
-              }`}
+              className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path
+                ? "text-primary font-semibold"
+                : "text-muted-foreground"
+                }`}
             >
               {link.label}
             </Link>
           ))}
           <a
-            href="https://wa.me/918553245274?text=Hello%20Tanmia%20Foods%2C%20I'm%20interested%20in%20your%20products%20and%20would%20like%20to%20get%20a%20quotation."
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:tanmiafoods@gmail.com?subject=Quotation Request&body=Hello Tanmia Foods,%0A%0AI am interested in your products and would like to receive a quotation.%0A%0AThank you."
             className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-accent text-accent-foreground text-sm font-semibold transition-transform hover:scale-105"
           >
             Get a Quote
@@ -68,19 +65,16 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setOpen(false)}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary"
-                }`}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === link.path
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary"
+                  }`}
               >
                 {link.label}
               </Link>
             ))}
             <a
-              href="https://wa.me/918553245274?text=Hello%20Tanmia%20Foods%2C%20I'm%20interested%20in%20your%20products%20and%20would%20like%20to%20get%20a%20quotation."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:tanmiafoods@gmail.com?subject=Quotation Request&body=Hello Tanmia Foods,%0A%0AI am interested in your products and would like to receive a quotation.%0A%0AThank you."
               className="mx-3 mt-2 text-center px-4 py-2 rounded-md bg-accent text-accent-foreground text-sm font-semibold"
             >
               Get a Quote

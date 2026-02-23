@@ -68,6 +68,12 @@ const Products = () => {
             >
               Enquire on WhatsApp
             </a>
+            <a
+              href="mailto:tanmiafoods@gmail.com?subject=Product Enquiry - Tanmia Foods&body=Hello Tanmia Foods,%0A%0AI am interested in your products and would like to get more details.%0A%0ARegards,"
+              className="ml-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-accent text-accent-foreground font-semibold text-sm transition-transform hover:scale-105"
+            >
+              Enquire via Email
+            </a>
           </div>
         </div>
       )}
