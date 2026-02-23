@@ -230,38 +230,54 @@ const Index = () => {
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-background rounded-xl max-w-md w-full p-6 relative animate-scale-in"
+            className="bg-background rounded-2xl w-[92%] sm:max-w-md mx-auto p-6 relative animate-scale-in shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Close Button */}
             <button
               onClick={() => setSelected(null)}
-              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
+              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X size={20} />
             </button>
-            <div className="aspect-video bg-secondary rounded-lg mb-4 overflow-hidden">
+
+            {/* Image */}
+            <div className="aspect-video bg-secondary rounded-lg mb-5 overflow-hidden">
               <img
                 src={selected.image}
                 alt={selected.name}
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="font-heading text-2xl font-bold mb-2">{selected.name}</h2>
-            <p className="text-muted-foreground mb-4">{selected.description}</p>
-            <a
-              href="https://wa.me/918553245274?text=Hello%20Tanmia%20Foods%2C%20I'm%20interested%20in%20your%20products%20and%20would%20like%20to%20get%20a%20quotation."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-accent text-accent-foreground font-semibold text-sm transition-transform hover:scale-105"
-            >
-              Enquire on WhatsApp
-            </a>
-            <a
-              href="mailto:tanmiafoods@gmail.com?subject=Product Enquiry - Tanmia Foods&body=Hello Tanmia Foods,%0A%0AI am interested in your products and would like to get more details.%0A%0ARegards,"
-              className="ml-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-accent text-accent-foreground font-semibold text-sm transition-transform hover:scale-105"
-            >
-              Enquire via Email
-            </a>
+
+            {/* Title */}
+            <h2 className="font-heading text-xl sm:text-2xl font-bold mb-2">
+              {selected.name}
+            </h2>
+
+            {/* Description */}
+            <p className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed">
+              {selected.description}
+            </p>
+
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://wa.me/918553245274?text=Hello%20Tanmia%20Foods%2C%20I'm%20interested%20in%20your%20products%20and%20would%20like%20to%20get%20a%20quotation."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center inline-flex justify-center items-center gap-2 px-5 py-3 rounded-lg bg-accent text-accent-foreground font-semibold text-sm transition-all hover:scale-[1.03] active:scale-95"
+              >
+                Enquire via WhatsApp
+              </a>
+
+              <a
+                href="mailto:tanmiafoods@gmail.com?subject=Product Enquiry - Tanmia Foods&body=Hello Tanmia Foods,%0A%0AI am interested in your products and would like to get more details.%0A%0ARegards,"
+                className="flex-1 text-center inline-flex justify-center items-center gap-2 px-5 py-3 rounded-lg border border-accent bg-transparent text-accent font-semibold text-sm transition-all hover:bg-accent hover:text-accent-foreground active:scale-95"
+              >
+                Enquire via Email
+              </a>
+            </div>
           </div>
         </div>
       )}
