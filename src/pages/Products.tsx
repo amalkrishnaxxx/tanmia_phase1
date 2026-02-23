@@ -55,7 +55,7 @@ const Products = () => {
               <img
                 src={selected.image}
                 alt={selected.name}
-                className="w-half h-full object-cover transition-transform duration-300"
+                className="w-full h-full object-cover transition-transform duration-300"
               />
             </div>
             <h2 className="font-heading text-2xl font-bold mb-2">{selected.name}</h2>
